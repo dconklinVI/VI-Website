@@ -1,0 +1,885 @@
+/*-------------Sprites--------------*/
+
+#menu-posts-career .wp-menu-image, #menu-posts-case_studies .wp-menu-image, #menu-posts-work .wp-menu-image, #menu-posts-people .wp-menu-image, #menu-posts-event .wp-menu-image, #menu-posts-short .wp-menu-image, #content_tcxbutton, #content_tcxsep, #content_tcxaccordion, #content_tcxcolumns, #content_replace, .gripper, .expander, input.px, input.ms, .tcx-slideshow-subsection-expander {
+	background-image: url("../images/spritesheet.png");
+	background-repeat: no-repeat;
+}
+
+.icons-page .icon {
+	background-image: url("../images/spritesheet-icons.png");
+	background-repeat: no-repeat;
+}
+
+/*------------CPT Icons-------------*/
+
+#adminmenu #menu-posts-work .wp-menu-image {
+	background-position: 0 -272px;
+}
+
+#adminmenu #menu-posts-work.opensub .wp-menu-image {
+	background-position: -28px -272px;
+}
+
+#adminmenu #menu-posts-case_studies .wp-menu-image {
+	background-position: -56px -272px;
+}
+
+#adminmenu #menu-posts-case_studies.opensub .wp-menu-image {
+	background-position: -84px -272px;
+}
+
+#adminmenu #menu-posts-career .wp-menu-image {
+	background-position: -112px -272px;
+}
+
+#adminmenu #menu-posts-career.opensub .wp-menu-image {
+	background-position: -140px -272px;
+}
+
+#adminmenu #menu-posts-people .wp-menu-image {
+	background-position: -168px -272px;
+}
+
+#adminmenu #menu-posts-people.opensub .wp-menu-image {
+	background-position: -196px -272px;
+}
+
+#adminmenu #menu-posts-event .wp-menu-image {
+	background-position: -224px -272px;
+}
+
+#adminmenu #menu-posts-event.opensub .wp-menu-image {
+	background-position: -250px -272px;
+}
+
+#adminmenu #menu-posts-short .wp-menu-image {
+	background-position: -280px -272px;
+}
+
+#adminmenu #menu-posts-short.opensub .wp-menu-image {
+	background-position: -308px -272px;
+}
+
+/*---------Theme Info Page----------*/
+
+#demo h2 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+#demo h3 {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+#demo h4 {
+	font-size: 14px;
+}
+
+#demo h5 {
+	font-weight: bold;
+}
+
+#demo .example {
+	margin: 1em 0;
+	color: #060606;
+	font: 12px Helvetica, Arial, sans-serif;
+	line-height: 16px;
+}
+
+#demo p {
+	
+}
+
+#demo a {
+	color: #000;
+	text-decoration: none;
+}
+
+#demo a:hover {
+	color: #777;
+	text-decoration: underline;
+}
+
+#demo ul {
+	
+}
+
+#demo ul li {
+	list-style-type: disc;
+}
+
+#demo strong {
+	font-weight: bold;
+}
+
+#demo em {
+	font-weight: normal;
+	font-style: oblique;
+}
+
+/*----------TinyMCE Styles----------*/
+
+td.mce_pre, td.mce_address, td.mce_h1, td.mce_h6 {display: none;}
+
+#content_tcxbutton, #content_tcxsep, #content_tcxaccordion, #content_tcxcolumns, #content_replace {
+	overflow: hidden;
+}
+
+#content_tcxbutton img, #content_tcxsep img, #content_tcxaccordion img, #content_tcxcolumns img, #content_replace img {
+	display: none;
+}
+
+#content_tcxbutton:hover img, #content_tcxsep:hover img, #content_tcxaccordion:hover img, #content_tcxcolumns:hover img, #content_replace:hover img {
+	position: relative;
+	top: -20px;
+}
+
+#content_tcxbutton {
+	background-position: -35px 0;
+}
+
+#content_tcxbutton:hover {
+	background-position: -35px -20px;
+}
+
+#content_tcxsep {
+	background-position: -58px 0;
+}
+
+#content_tcxsep:hover {
+	background-position: -58px -20px;
+}
+
+#content_tcxaccordion {
+	background-position: -105px 0;
+}
+
+#content_tcxaccordion:hover {
+	background-position: -105px -20px;
+}
+
+#content_tcxcolumns {
+	background-position: -82px 0;
+}
+
+#content_tcxcolumns:hover {
+	background-position: -82px -20px;
+}
+
+.wp_themeSkin span.mce_replace {
+	display: none !important;
+}
+
+#content_replace {
+	background-position: -130px 0;
+}
+
+#content_replace:hover {
+	background-position: -130px -20px;
+}
+
+/*--------TCX Columns Plugin--------*/
+
+#add-columns span {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+	padding: 5px;
+	text-align: center;
+	background-color: #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#add-columns span:hover {
+	background-color: #aaa;
+}
+
+#add-columns span.inactive {
+	color: #aaa;
+	cursor: default;
+}
+
+#add-columns span.inactive:hover {
+	background-color: #ccc;
+}
+
+#c75 {
+	width: 220px;
+}
+
+#c66 {
+	width: 180px;
+}
+
+#c50 {
+	width: 150px;
+}
+
+#c33 {
+	width: 120px;
+}
+
+#c25 {
+	width: 90px;
+	margin-right: 0 !important;
+}
+
+#c20 {
+	width: 75px;
+	margin-right: 0 !important;
+}
+
+#colpreview {
+	height: 50px;
+	width: 500px;
+	background-color: #ccc;
+	padding: 5px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#colpreview div {
+	background-color: #333;
+	position: relative;
+	float: left;
+	height: 100%;
+	margin-right: 4%;
+	cursor: pointer;
+}
+
+#colpreview div:hover {
+	background-color: #444;
+}
+
+.c75 {
+	width: 71%;
+}
+
+.c66 {
+	width: 62%;
+}
+
+.c50 {
+	width: 46%;
+}
+
+.c33 {
+	width: 29.3%;
+}
+
+.c25 {
+	width: 21%;
+}
+
+.c20 {
+	width: 16%;
+}
+
+/*--------Theme Options Page--------*/
+
+.disabled {
+	color: #999;
+}
+
+#social-config .tcx-sortable, #tcx-slideshow .tcx-sortable {
+	cursor: auto;
+	padding-left: 20px;
+}
+
+#social-config label {
+	display: inline-block;
+	width: 75px;
+}
+
+.share-bar-options {
+	width: 422px;
+}
+
+.share-bar-theme-selector {
+	position: relative;
+	float: right;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+.gripper {
+	position: absolute;
+	left: 3px;
+	top: 50%;
+	margin-top: -14px;
+	width: 9px;
+	height: 28px;
+	background-position: -16px 0;
+	cursor: move;
+}
+
+/*------------Slideshow-------------*/
+
+noscript.error {
+	display: block;
+	margin: 10px 0;
+	background-color: #ffebe8;
+	border: 1px solid #c00;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.tcx-slideshow-inter-nav {
+	position: relative;
+	float: right;
+	margin-top: 10px;
+}
+
+#tcx-slideshow .tcx-sortable, .ui-state-highlight {
+	height: 24px;
+	width: auto;
+	min-height: 26px;
+	line-height: 24px;
+	padding: 4px 4px 4px 20px;
+}
+
+#tcx-slideshow .tcx-sortable.expanded {
+	height: 200px;
+	padding-bottom: 40px;
+}
+
+.all-slides {
+	min-height: 35px;
+}
+
+.ui-state-highlight {
+	background: #ddd;
+}
+
+.tcx-slide-fields {
+	position: relative;
+	float: left;
+	width: 50%;
+	margin-left: 8px;
+	line-height: 0;
+}
+
+.title-field[disabled] {
+	border: 0;
+	background: none;
+	margin-bottom: 5px;
+	color: #242424;
+	font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+	font-size: 15px;
+}
+
+#tcx-slideshow .tcx-sortable label {
+	display: block;
+	line-height: 25px;
+}
+
+.tcx-sortable textarea {
+	line-height: 17px;
+	width: 100%;
+}
+
+.tcx-sortable .link-field {
+	width: 100%;
+}
+
+.tcx-sortable .lightbox-option {
+	position: relative;
+	float: right;
+}
+
+.tcx-slideshow-upload-button {
+	position: absolute;
+	left: 100px;
+	bottom: 7px;
+}
+
+.tcx-sortable .delete {
+	position: absolute;
+	left: 232px;
+	bottom: 7px;
+	width: 200px;
+}
+
+.tcx-sortable .deletehider, .slideshow-deletehider {
+	display: inline-block;
+	width: 100px;
+	overflow: hidden;
+	text-indent: -100px;
+	margin-left: 3px;
+	padding-left: 5px;
+	border-left: 1px solid #999;
+}
+
+.expander {
+	position: absolute;
+	right: 4px;
+	top: 8px;
+	width: 22px;
+	height: 18px;
+	background-position: 100% 50%;
+	cursor: pointer;
+}
+
+#tcx-slideshow .thumbnail {
+	position: relative;
+	float: left;
+	height: 100%;
+	margin: 0;
+	width: auto;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 0 0 1px black;
+	-moz-box-shadow: 0 0 1px black;
+	box-shadow: 0 0 1px black;
+}
+
+#tcx-slideshow .new.thumbnail, #tcx-slideshow .thumbnail[src=""] {
+	width: 24px;
+	height: 24px;
+}
+
+#tcx-slideshow .expanded .new.thumbnail, #tcx-slideshow .expanded .thumbnail[src=""] {
+	width: 200px;
+	height: 200px;
+}
+
+#tcx-slideshow .tcx-sortable.expanded label {
+	display: block;
+}
+
+#description_class, #title_class {
+	width: 100px;
+}
+
+#inactive-slides {
+	border: 1px #999 dashed;
+	padding: 20px;
+}
+
+#tcx-slideshow .widgets-sortables {
+	padding: 15px 0;
+	min-height: inherit;
+}
+
+#tcx-slideshow .submitbox {
+	position: relative;
+	height: 40px;
+}
+
+#tcx-slideshow .submitbox .id {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+}
+
+#tcx-slideshow .submitbox .delete {
+	position: absolute;
+	left: 12px;
+	bottom: 14px;
+}
+
+#tcx-slideshow .submitbox .button-primary {
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+}
+
+#tcx-slideshow .postbox .inside {
+	margin: 0;
+}
+
+input.px, input.ms {
+	width: 58px;
+	padding: 3px 22px 3px 3px;
+	background-position: 100% 0;
+}
+
+input.ms {
+	background-position: 100% -28px;
+}
+
+.by {
+	margin: 0 9px;
+	color: #999;
+	font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif;
+	font-size: 15px;
+	font-style: oblique;
+}
+
+#tcx-slideshow-pager-select {
+	width: 82px;
+}
+
+#tcx-slideshow .slide-link-label {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+#tcx-slideshow .tcx-slideshow-animation {
+	padding: 15px 0 5px 0;
+}
+
+.tcx-slideshow-animation .inside {
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 12px;
+}
+
+.tcx-slideshow-subsection-expander {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 8px 12px;
+	background-position: 105% 50%;
+	cursor: pointer;
+	-webkit-box-shadow: inset 2px 2px 11px #fff;
+	-moz-box-shadow: inset 2px 2px 11px #fff;
+	box-shadow: inset 2px 2px 11px #fff;
+}
+
+.tcx-slideshow-subsection-expander:hover {
+	background-color: #fefefe;
+}
+
+.tcx-slideshow-subsection {
+	padding: 0 12px;
+}
+
+.tcx-slideshow-subsection li {
+	border-bottom: 1px dashed #ccc;
+	text-align: right;
+	line-height: 24px;
+	padding-bottom: 4px;
+}
+
+.tcx-slideshow-subsection label {
+	position: relative;
+	float: left;
+}
+
+.tcx-slideshow-appearance-optionlist {
+	clear: left;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.float-left {
+	position: relative;
+	float: left;
+}
+
+.float-right {
+	position: relative;
+	float: right;
+}
+
+/*-----------Icons Page-------------*/
+
+.icons-page .icon {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	background-color: #111;
+}
+
+.icons-page a.icon:hover {
+	color: #1c252c;
+	text-decoration: none;
+	background-color: #ccc;
+}
+
+.icons-page .icon:hover span {
+	display: block;
+}
+
+.icons-page .icon span {
+	position: absolute;
+	left: -10px;
+	top: 31px;
+	display: none;
+	width: 100px;
+	text-transform: uppercase;
+	font-family: UniversLT-CondensedBold, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	text-align: center;
+}
+
+.icons-page .icon.twoline span {
+	top: 21px;
+}
+
+.icons-page .icon.threeline span {
+	top: 9px;
+}
+
+.icons-page .icon.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.icons-page .icon-name {
+	position: relative;
+	text-align: center;
+	width: 80px;
+	height: 40px;
+	margin-right: 20px;
+}
+
+.icons-page .icon-name.smallname {
+	width: 50px;
+}
+
+.icons-page .icon-block {
+	position: relative;
+	float: left;
+	width: 120px;
+}
+
+.people {
+	background-position: 0 0;
+}
+
+.history {
+	background-position: -80px 0;
+}
+
+.services {
+	background-position: -160px 0;
+}
+
+.inspiration {
+	background-position: -240px 0;
+}
+
+.events {
+	background-position: -320px 0;
+}
+
+.clubs {
+	background-position: -400px 0;
+}
+
+.stats {
+	background-position: 0 -80px;
+}
+
+.shorts {
+	background-position: -80px -80px;
+}
+
+.education {
+	background-position: -160px -80px;
+}
+
+.healthcare {
+	background-position: -240px -80px;
+}
+
+.utilities {
+	background-position: -320px -80px;
+}
+
+.business-services {
+	background-position: -400px -80px;
+}
+
+.social-marketing {
+	background-position: 0 -160px;
+}
+
+.financial {
+	background-position: -80px -160px;
+}
+
+.vibe {
+	background-position: 0 -720px;
+}
+
+.newsroom {
+	background-position: -320px -240px;
+}
+
+.search {
+	background-position: -240px -160px;
+}
+
+.tourism {
+	background-position: 0 -240px;
+}
+
+.assets {
+	background-position: -80px -240px;
+}
+
+.newsletter {
+	background-position: -240px -240px;
+}
+
+.seo {
+	background-position: -160px -320px;
+}
+
+.creative {
+	background-position: -240px -320px;
+}
+
+.socialstrategy {
+	background-position: -320px -320px;
+}
+
+.print {
+	background-position: 0 -400px;
+}
+
+.outdoor {
+	background-position: -80px -400px;
+}
+
+.tv {
+	background-position: -160px -400px;
+}
+
+.social {
+	background-position: -240px -400px;
+}
+
+.website {
+	background-position: -320px -400px;
+}
+
+.radio {
+	background-position: -400px -400px;
+}
+
+.guerilla {
+	background-position: 0 -480px;
+}
+
+.trade-show {
+	background-position: -80px -480px;
+}
+
+.collateral {
+	background-position: -160px -480px;
+}
+
+.mobile {
+	background-position: -240px -480px;
+}
+
+.retail {
+	background-position: -320px -480px;
+}
+
+.branding {
+	background-position: -400px -480px;
+}
+
+.strategic-planning {
+	background-position: 0 -560px;
+}
+
+.automotive {
+	background-position: -80px -560px;
+}
+
+.oil {
+	background-position: -160px -560px;
+}
+
+.collision {
+	background-position: -240px -560px;
+}
+
+.event {
+	background-position: -320px -560px;
+}
+
+.media-mayhem {
+	background-position: -320px -720px;
+}
+
+.agriculture {
+	background-position: -400px -560px;
+}
+
+.food {
+	background-position: 0 -640px;
+}
+
+.public-relations {
+	background-position: -80px -640px;
+}
+
+.digital {
+	background-position: -160px -640px;
+}
+
+.production {
+	background-position: -240px -640px;
+}
+
+.media-planning {
+	background-position: -320px -640px;
+}
+
+.advertising {
+	background-position: -400px -640px;
+}
+
+.corporate-id {
+	background-position: -160px -800px;
+}
+
+.no-careers {
+	background-position: -400px -720px;
+}
+
+/*-----------Small Icons------------*/
+
+.icons-page .small {
+	width: 50px;
+	height: 50px;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.icons-page .small:hover {
+	background-color: #111;
+}
+
+.send {
+	background-position: -95px -333px;
+}
+
+.pdf {
+	background-position: -175px -255px;
+}
+
+.apply {
+	background-position: -13px -332px;
+}
+
+.readmore {
+	background-position: -335px -176px;
+}
+
+.small.newsletter {
+	background-position: -256px -256px;
+}
+
+.results {
+	background-position: -175px -177px;
+}

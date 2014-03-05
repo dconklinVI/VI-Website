@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Insert Table</title>
+	<script type="text/javascript" src="../mce-includes/tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../mce-includes/mctabs.js"></script>
+	<script type="text/javascript" src="../mce-includes/form_utils.js"></script>
+	<script type="text/javascript" src="../mce-includes/validate.js"></script>
+	<script type="text/javascript" src="../mce-includes/editable_selects.js"></script>
+	<script type="text/javascript" src="js/table.js"></script>
+	<link href="css/table.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="table" style="display: none" role="application" aria-labelledby="app_title">
+	<span style="display:none;" id="app_title">Insert Table</span>
+	<form onsubmit="insertTable();return false;" action="#">
+		<div class="tabs">
+			<ul>
+				<li id="general_tab" aria-controls="general_panel" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">General</a></span></li>
+				<li id="advanced_tab" aria-controls="advanced_panel"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">Advanced</a></span></li>
+			</ul>
+		</div>
+
+		<div class="panel_wrapper">
+			<div id="general_panel" class="panel current">
+				<fieldset>
+					<legend>General</legend>
+					<table role="presentation" border="0" cellpadding="4" cellspacing="0" width="100%">
+						<tr>
+							<td><label id="colslabel" for="cols">Columns</label></td>
+							<td><input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1 mceFocus" aria-required="true" /></td>
+							<td><label id="rowslabel" for="rows">Rows</label></td>
+							<td><input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" aria-required="true" /></td>
+						</tr>
+						<tr>
+							<td><label id="cellpaddinglabel" for="cellpadding">Cell Padding</label></td>
+							<td><input id="cellpadding" name="cellpadding" type="text" value="" size="3" maxlength="3" class="number" /></td>
+							<td><label id="cellspacinglabel" for="cellspacing">Cell Spacing</label></td>
+							<td><input id="cellspacing" name="cellspacing" type="text" value="" size="3" maxlength="3" class="number" /></td>
+						</tr>
+						<tr>
+							<td><label id="alignlabel" for="align">Align</label></td>
+							<td><select id="align" name="align">
+								<option value=""></option>
+								<option value="center">Center</option>
+								<option value="left">Left</option>
+								<option value="right">Right</option>
+							</select></td>
+							<td><label id="borderlabel" for="border">Border</label></td>
+							<td><input id="border" name="border" type="text" value="" size="3" maxlength="5" onchange="changedBorder();" class="size" /></td>
+						</tr>
+						<tr id="width_row">
+							<td><label id="widthlabel" for="width">Width</label></td>
+							<td><input name="width" type="text" id="width" value="" size="7" maxlength="7" onchange="changedSize();" class="size" /></td>
+							<td><label id="heightlabel" for="height">Height</label></td>
+							<td><input name="height" type="text" id="height" value="" size="7" maxlength="7" onchange="changedSize();" class="size" /></td>
+						</tr>
+						<tr id="styleSelectRow" >
+							<td><label id="classlabel" for="class">CSS Class</label></td>
+							<td colspan="3" >
+							 <select id="class" name="class" class="mceEditableSelect">
+								<option value="" selected="selected"></option>
+							 </select></td>
+						</tr>
+						<tr>
+							<td class="column1" ><label for="caption">Caption</label></td> 
+							<td><input id="caption" name="caption" type="checkbox" class="checkbox" value="true" /></td> 
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+
+			<div id="advanced_panel" class="panel">
+				<fieldset>
+					<legend>Advanced Properties</legend>
+
+					<table role="presentation" border="0" cellpadding="0" cellspacing="4">
+						<tr>
+							<td class="column1"><label for="id">ID</label></td> 
+							<td><input id="id" name="id" type="text" value="" class="advfield" /></td> 
+						</tr>
+
+						<tr>
+							<td class="column1"><label for="summary">Summary</label></td> 
+							<td><input id="summary" name="summary" type="text" value="" class="advfield" /></td> 
+						</tr>
+
+						<tr>
+							<td><label for="style">Style</label></td>
+							<td><input type="text" id="style" name="style" value="" class="advfield" onchange="changedStyle();" /></td>
+						</tr>
+
+						<tr>
+							<td class="column1"><label id="langlabel" for="lang">Language</label></td> 
+							<td>
+								<input id="lang" name="lang" type="text" value="" class="advfield" />
+							</td> 
+						</tr>
+
+						<tr>
+							<td class="column1"><label for="backgroundimage">Background Image</label></td> 
+							<td>
+								<table role="presentation" aria-labelledby="backgroundimage_label" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td><input id="backgroundimage" name="backgroundimage" type="text" value="" class="advfield" onchange="changedBackgroundImage();" /></td>
+										<td id="backgroundimagebrowsercontainer">&nbsp;</td>
+									</tr>
+								</table>
+							</td> 
+						</tr>
+
+						<tr>
+							<td class="column1"><label for="dir">Language Direction</label></td> 
+							<td>
+								<select id="dir" name="dir" class="advfield"> 
+										<option value="">{#not_set}</option> 
+										<option value="ltr">Left to Right</option> 
+										<option value="rtl">Right to Left</option> 
+								</select>
+							</td> 
+						</tr>
+
+						<tr role="group" aria-labelledby="bordercolor_label">
+							<td class="column1"><label id="bordercolor_label" for="bordercolor">Border Color</label></td> 
+							<td>
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td><input id="bordercolor" name="bordercolor" type="text" value="" size="9" onchange="updateColor('bordercolor_pick','bordercolor');changedColor();" /></td>
+										<td id="bordercolor_pickcontainer">&nbsp;</td>
+									</tr>
+								</table>
+							</td> 
+						</tr>
+
+						<tr role="group" aria-labelledby="bgcolor_label">
+							<td class="column1"><label id="bgcolor_label" for="bgcolor">Background Color</label></td> 
+							<td>
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td><input id="bgcolor" name="bgcolor" type="text" value="" size="9" onchange="updateColor('bgcolor_pick','bgcolor');changedColor();" /></td>
+										<td id="bgcolor_pickcontainer">&nbsp;</td>
+									</tr>
+								</table>
+							</td> 
+						</tr>
+					</table>
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="mceActionPanel">
+			<input type="submit" id="insert" name="insert" value="Insert Table" />
+			<input type="button" id="cancel" name="cancel" value="Cancel" onclick="tinyMCEPopup.close();" />
+		</div>
+	</form>
+</body>
+</html>

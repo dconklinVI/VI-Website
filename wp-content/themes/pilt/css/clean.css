@@ -1,0 +1,408 @@
+/*------------MyFonts Kit-----------*/
+@import url("//hello.myfonts.net/count/26663a");
+
+/*----------Redeclarations----------*/
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: oblique;
+}
+
+sup, sub {
+	position: relative;
+	font-size: 80%;
+}
+
+sup {
+	top: -6px;
+}
+
+sub {
+	top: 6px;
+}
+
+/*-------------Sprites--------------*/
+
+.accordion, .container .flex-control-paging li a, #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span, .flex-direction-nav a, #header .menu a, .social-icons, .searchform .searchsubmit, .icon-email, .icon-briefcase, .back, .forward, .tcx_button, #social-sharrre, .engage-blog, .engage-facebook, .engage-twitter, .engage-instagram, .engage-newsroom, .customSelect {
+	background-image: url("../images/spritesheet.png");
+	background-repeat: no-repeat;
+}
+
+.icon {
+	background-image: url("../images/spritesheet-icons.png");
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+	.accordion, .container .flex-control-paging li a, #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span, .flex-direction-nav a, #header .menu a, .social-icons, .searchform .searchsubmit, .back, .forward, .tcx_button, .engage-blog, .engage-facebook, .engage-twitter, .engage-instagram, .engage-newsroom, .customSelect {
+		background-image: url("../images/spritesheet-2x.png");
+		background-size: 500px 500px;
+	}
+
+	.icon {
+		background-image: url("../images/spritesheet-icons-2x.png");
+		background-size: 480px 880px;
+	}
+}
+
+/*-------Block Level Elements-------*/
+
+body {
+	background: #f9f9f9;
+	padding: 10px;
+	color: #1c252c;
+	font: 15px/21px UniversLTPro-Condensed, Helvetica, Arial, sans-serif;
+}
+
+/*---------Inline Elements----------*/
+
+h2 {
+	text-align: center;
+	font-size: 36px;
+	line-height: 42px;
+	margin: .25em 0 1em 0;
+}
+
+h2 strong {
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 1em 0;
+}
+
+h4 {
+	font-size: 18px;
+	margin: 1em 0;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	text-decoration: underline;
+	color: 000;
+}
+
+ul {
+	margin-left: 1em;
+}
+
+li {
+	list-style-type: disc;
+}
+
+/*-----------Accordions-------------*/
+
+.accordion {
+	display: block;
+	padding: 3px 32px 3px 6px;
+	background: rgba(255,255,255,0.4) url("../images/accordion-bg.png") 99% 50% no-repeat;
+	color: #666;
+	margin: 1em 0;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.accordion:hover {
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+}
+
+.accordion h4 {
+	margin: 5px 0 5px 10px;
+}
+
+.element {
+	width: 500px;
+}
+
+.element, blockquote {
+	margin-left: 20px;
+	border-left: 1px #777 solid;
+	padding-left: 20px;
+}
+
+.element p {
+	margin: 0;
+}
+
+/*-------------Columns--------------*/
+
+.c75, .c66, .c50, .c33, .c25, .c20 {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 0 4% 1em 0;
+}
+
+.c75 {
+	width: 71%;
+}
+
+.c66 {
+	width: 62%;
+}
+
+.c50 {
+	width: 46%;
+}
+
+.c33 {
+	width: 29.3%;
+}
+
+.c25 {
+	width: 21%;
+}
+
+.c20 {
+	width: 16%;
+}
+
+.c75 .element, .c66 .element, .c50 .element, .c33 .element, .c25 .element, .c20 .element {
+	width: auto;
+}
+
+/*-------------Buttons--------------*/
+
+.tcx_button {
+	display: inline-block;
+	height: 22px;
+	line-height: 24px;
+	padding: 3px 30px 3px 0;
+	margin: 0;
+	border: 0;
+	color: #1c252c;
+	background-position: 102% -82px;
+	font-size: 15px;
+	text-align: left;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.tcx_button.gray {
+	padding-left: 10px;
+	background-color: #e8e9e9;
+}
+
+.tcx_button:hover {
+	text-decoration: none;
+}
+
+.excerpt-button {
+	position: relative;
+	float: right;
+	margin-top: .5em;
+}
+
+/*----------Gravity Forms-----------*/
+
+.gform_wrapper {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.gform_wrapper li {
+	position: relative !important;
+}
+
+.gform_wrapper .ginput_complex .ginput_left {
+	width: 47% !important;
+}
+
+.gform_footer {
+	text-align: right;
+}
+
+.gform_footer .button {
+	position: static !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.ui-datepicker-div, .ui-datepicker-inline, #ui-datepicker-div {
+	border: 0 !important;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 25px rgba(0, 0, 0, .5);
+}
+
+.gfield_label {
+	margin: 5px 0 !important;
+	font-weight: normal !important;
+}
+
+.left_label .gfield_label {
+	width: 20% !important;
+}
+
+.gform_body input, .gform_body textarea {
+	height: 22px;
+	padding: 3px 3px 3px 10px !important;
+	margin: 0;
+	border: 0;
+	color: #1c252c;
+	background-color: #e8e9e9;
+	font-size: 15px !important;
+}
+
+.gfield_error, .gform_wrapper .gfield_contains_required, .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+	width: auto !important;
+	border: 0 !important;
+	background: none !important;
+	margin-bottom: 0.5em !important;
+	margin-left: 0;
+}
+
+.gfield_error .gfield_label, .gfield_error .ginput_container {
+	margin-top: 0 !important;
+}
+
+.gfield_error input, .gfield_error textarea {
+	border: 1px solid rgba(150, 0, 0, 0.5) !important;
+	-webkit-box-shadow: inset 1px 1px 5px rgba(150, 0, 0, 0.4) !important;
+	-moz-box-shadow: inset 1px 1px 5px rgba(150, 0, 0, 0.4) !important;
+	box-shadow: inset 1px 1px 5px rgba(150, 0, 0, 0.4) !important;
+	background-color: rgba(255, 0, 0, 0.03) !important;
+}
+
+.gfield_error input:focus, .gfield_error textarea:focus {
+	background-color: rgba(150, 150, 150, 0.20) !important;
+}
+
+.gform_wrapper li.gfield.gfield_error .gfield_description {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	padding: 0 !important;
+	margin: 0 !important;
+	text-align: right;
+}
+
+.gform_wrapper .right_label div.ginput_complex, .gform_wrapper .left_label div.ginput_complex {
+	width: 64.4% !important;
+}
+
+.gform_wrapper .gform_footer.right_label, .gform_wrapper .gform_footer.left_label {
+	padding: 10px 0 0 0 !important;
+	text-align: center;
+}
+
+#recaptcha_table {
+	border: none !important;
+}
+
+#recaptcha_privacy {
+	display: none;
+}
+
+#recaptcha_response_field {
+	width: 289px !important;
+	border: 0 !important;
+}
+
+#recaptcha_reload, #recaptcha_switch_audio, #recaptcha_whatsthis {
+	display: none;
+}
+
+#recaptcha_reload_btn, #recaptcha_switch_audio_btn, #recaptcha_whatsthis_btn {
+	display: block;
+	width: 25px;
+	background: url("../images/spritesheet.png") !important;
+}
+
+#recaptcha_reload_btn {
+	height: 18px;
+	background-position: -168px 0 !important;
+}
+
+#recaptcha_switch_audio_btn {
+	height: 15px;
+	background-position: -168px -18px !important;
+}
+
+#recaptcha_whatsthis_btn {
+	height: 16px;
+	background-position: -168px -33px !important;
+}
+
+.recaptchatable .recaptcha_image_cell {
+	background-color: transparent !important;
+}
+
+/*---------CSS3 and Custom----------*/
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+a, #footer, .accordion {
+	-webkit-transition: color .2s linear, background .2s linear;
+	-o-transition: color .2s linear, background .2s linear;
+	-moz-transition: color .2s linear, background .2s linear;
+	transition: color .2s linear, background .2s linear;
+}
+
+.float-left, .alignleft {
+	position: relative;
+	float: left;
+}
+
+.float-right, .alignright {
+	position: relative;
+	float: right;
+}
+
+.separator {
+	clear: both;
+	height: 1px;
+	width: 100%;
+	background-color: #777;
+	margin: 1em 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* @license
+ * MyFonts Webfont Build ID 2516538, 2013-03-28T11:50:12-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Univers Pro 57 Condensed by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/univers/pro-57-condensed/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2008 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2516538
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+@font-face {font-family: 'UniversLTPro-Condensed';src: url('26663A_0_0.eot');src: url('26663A_0_0.eot?#iefix') format('embedded-opentype'),url('26663A_0_0.woff') format('woff'),url('26663A_0_0.ttf') format('truetype');}

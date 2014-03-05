@@ -1,0 +1,37 @@
+p {
+	margin: 1em 0;
+}
+
+h2 {
+	font-size: 36px;
+	margin: 0.25em 0 1em 0;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+.home #slideshow .tablet-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.gray .title {
+	display: none;
+}
+
+.gray:hover .title {
+	display: block;
+}
+
+.icon {
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	behavior: url(../script/PIE.htc);
+}

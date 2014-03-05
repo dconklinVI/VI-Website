@@ -1,0 +1,116 @@
+/*---------TinyMCE Styles-----------*/
+
+.mceContentBody {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helvetica, sans-serif !important;
+	color: #111 !important;
+}
+
+.c75, .c66, .c50, .c33, .c25, .c20 {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 0 3% 1em 0;
+	padding: 2px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.c75:hover, .c66:hover, .c50:hover, .c33:hover, .c25:hover, .c20:hover {
+	border-color: #aaa;
+}
+
+.c75 {
+	width: 71%;
+}
+
+.c66 {
+	width: 62%;
+}
+
+.c50 {
+	width: 46%;
+}
+
+.c33 {
+	width: 29.3%;
+}
+
+.c25 {
+	width: 21%;
+}
+
+.c20 {
+	width: 16%;
+}
+
+.c75::before, .c66::before, .c50::before, .c33::before, .c25::before, .c20::before, .accordion::before {
+	display: inline-block;
+	background: #eee;
+	padding: 0px 4px;
+	line-height: 16px;
+	position: absolute;
+	top: 0px;
+	text-transform: uppercase;
+	right: 0px;
+	color: #aaa;
+	font-size: 8px;
+	content: 'Column';
+	border: 1px solid #ccc;
+	border-width: 0 0 1px 1px;
+	-webkit-border-radius: 0 0 0 3px;
+	-moz-border-radius: 0 0 0 3px;
+	border-radius: 0 0 0 3px;
+}
+
+.accordion, .element {
+	display: block;
+	width: 96%;
+	position: relative;
+	float: left;
+	margin: 0 3% 1em 0;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+.accordion:hover, .element:hover {
+	border-color: #aaa;
+}
+
+.accordion::before {
+	content: 'Accordion';
+}
+
+.accordion {
+	margin-bottom: 0;
+	border-bottom: 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+}
+
+.element {
+	border-top-style: dotted;
+	margin-bottom: 1em;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	border-radius: 0 0 3px 3px;
+}
+
+.element:hover {
+	border-top-color: #ccc;
+}
+
+.c75 > .accordion:first-child, .c66 > .accordion:first-child, .c50 > .accordion:first-child, .c33 > .accordion:first-child, .c25 > .accordion:first-child, .c20 > .accordion:first-child {
+	margin-top: 11px;
+}
+
+.c75 .c75, .c66 .c75, .c50 .c75, .c33 .c75, .c20 .c75,
+.c75 .c66, .c66 .c66, .c50 .c66, .c33 .c66, .c20 .c66,
+.c75 .c50, .c66 .c50, .c50 .c50, .c33 .c50, .c20 .c50,
+.c75 .c33, .c66 .c33, .c50 .c33, .c33 .c33, .c20 .c33,
+.c75 .c20, .c66 .c20, .c50 .c20, .c33 .c20, .c20 .c20 {
+	margin-right: 2%;
+	margin-top: 11px;
+}
